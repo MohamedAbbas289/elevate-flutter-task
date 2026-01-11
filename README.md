@@ -1,16 +1,33 @@
-# elevate_flutter_task
+# Elevate Flutter Technical Task
 
-A new Flutter project.
+A professional product listing application built with Flutter that fetches data from the Fake Store API. This project demonstrates Clean Architecture, modern state management, and dependency injection.
 
-## Getting Started
+## 📸 App Preview
+![Product Grid](<img width="540" height="1202" alt="image" src="https://github.com/user-attachments/assets/c692c7ee-5de5-4b5a-8dbe-f657c402212e" />
+)
 
-This project is a starting point for a Flutter application.
+## 🏗️ Architecture & Patterns
+This project follows **Clean Architecture** to ensure the code is scalable, maintainable, and testable:
 
-A few resources to get you started if this is your first Flutter project:
+- **MVVM Pattern**: Separation of UI (View) and Logic (ViewModel/Cubit).
+- **Repository Pattern**: Abstracting data sources from the business logic.
+- **Dependency Injection (DI)**: Using `get_it` and `injectable` for automated service location.
+- **State Management**: Using `flutter_bloc` (Cubit) to handle the UI states (Loading, Success, Error).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## 📂 Project Structure
+- `lib/core`: DI configuration and shared utilities.
+- `lib/data`: Data models (JSON parsing) and Repository implementations.
+- `lib/domain`: Abstract repository definitions and business logic.
+- `lib/presentation`: UI screens, custom widgets, and Cubit logic.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Built With
+- [Flutter](https://flutter.dev/) - UI Framework.
+- [Dio](https://pub.dev/packages/dio) - Networking client.
+- [Flutter Bloc](https://pub.dev/packages/flutter_bloc) - State management.
+- [Get It](https://pub.dev/packages/get_it) & [Injectable](https://pub.dev/packages/injectable) - Dependency Injection.
+
+## ⚙️ Setup & Run
+1. Clone the repository.
+2. Install dependencies:
+   ```bash
+   flutter pub get
