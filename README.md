@@ -3,8 +3,7 @@
 A professional product listing application built with Flutter that fetches data from the Fake Store API. This project demonstrates Clean Architecture, modern state management, and dependency injection.
 
 ## 📸 App Preview
-![Product Grid](<img width="540" height="1202" alt="image" src="https://github.com/user-attachments/assets/c692c7ee-5de5-4b5a-8dbe-f657c402212e" />
-)
+![Product Grid](screenshots/task_screenshot.jpeg)
 
 ## 🏗️ Architecture & Patterns
 This project follows **Clean Architecture** to ensure the code is scalable, maintainable, and testable:
